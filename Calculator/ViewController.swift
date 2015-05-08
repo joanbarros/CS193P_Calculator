@@ -20,6 +20,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBOutlet weak var display: UILabel!
+    
+    @IBAction func input(sender: UIButton) {
+        display.text = display.text! + sender.currentTitle!
+    }
 
 }
 
